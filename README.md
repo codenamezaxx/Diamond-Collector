@@ -15,4 +15,8 @@ S / ArrowDown = Move Down
 D / ArrowRight = Move Right
 ENTER = Start or Restart game
 
+*Note: This game has a bug in enemy collision (script.js line 201 & 205)
+
 (Sorry for my bad english :D)
+
+Github: https://github.com/codenamezaxx
