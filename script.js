@@ -70,7 +70,7 @@ window.onload = function() {
         context.strokeStyle = "gray";
         context.stroke();
         
-        //response for user input
+        //response for user input in desktop button
         right.onmousedown = function() {
             if (started==true && gameover == false) {
                 dirX=1;
@@ -102,21 +102,55 @@ window.onload = function() {
         };
         down.onmouseup = function() {
             dirY=0;
+        };
+            
+        //response for user input in desktop button
+        right.ontouchstart = function() {
+            if (started==true && gameover == false) {
+                dirX=1;
             };
-        
-        document.addEventListener('keydown',function(event){
+        };
+        right.ontouchend = function() {
+            dirX=0;
+        };
+        left.ontouchstart = function() {
+            if (started==true && gameover == false) {
+                dirX=-1;
+            };
+        };
+        left.ontouchend = function() {
+            dirX=0;
+            };
+        up.ontouchstart = function() {
+            if (started==true && gameover == false) {
+                dirY=-1;
+            };
+        };
+        up.ontouchend = function() {
+            dirY=0;
+            };
+        down.ontouchstart = function() {
+            if (started==true && gameover == false) {
+                dirY=1;
+            };
+        };
+        down.ontouchend = function() {
+            dirY=0;
+        };
+            
+            document.addEventListener('keydown',function(event){
             if (started==true && gameover == false && event.code == 'ArrowUp' || event.code == "KeyW") {
                 dirY= -1;
             }
             else if (started==true && gameover == false && event.code == 'ArrowDown' || event.code == "KeyS") {
                 dirY = 1; 
-            }
+            };
             if (started==true && gameover == false && event.code == 'ArrowRight' || event.code == "KeyD") {
                 dirX = 1; 
             }
             else if (started==true && gameover == false && event.code == 'ArrowLeft' || event.code == "KeyA") {
                 dirX = -1; 
-            }
+            };
         });
     
         document.addEventListener('keyup',function(event){
@@ -125,13 +159,13 @@ window.onload = function() {
             }
             else if (event.code == 'ArrowDown' || event.code == "KeyS") {
                 dirY = 0;
-            }
+            };
             if (event.code == 'ArrowRight' || event.code == "KeyD") {
                 dirX = 0; 
             }
             else if (event.code == 'ArrowLeft' || event.code == "KeyA") {
                 dirX = 0; 
-            }
+            };
         });
         enter.onclick = function() {
             score = 0;
@@ -179,7 +213,7 @@ window.onload = function() {
             if(x>25){
                 x += dirX*(speed * timePassed);
             }
-        }
+        };
         if(dirY==1) {
             if(y+25 < 500){
                 y += dirY*(speed * timePassed);
@@ -189,7 +223,7 @@ window.onload = function() {
             if(y>85){
                 y += dirY*(speed * timePassed);
             }
-        }
+        };
 
         //collison for player & diamond
         if (diamondX <= x+20 && x<=diamondX+40 && diamondY <= y+20 && y <= diamondY+40) {
