@@ -6,7 +6,7 @@ body{
     background: rgb(175, 255, 101);
 }
 #canvas {
-    border-radius: 20px;
+    border-radius: 10px;
     width: 60%;
     height: 60%;
     background: #222222;
