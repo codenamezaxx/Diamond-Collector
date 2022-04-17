@@ -14,10 +14,9 @@ W / ArrowUp = Move Up\
 A / ArrowLeft = Move Left\
 S / ArrowDown = Move Down\
 D / ArrowRight = Move Right\
-ENTER = Start game or Pause game\
+ENTER = Start game or Pause game
 
-*Note: This game has a bug in enemy collision if framerate is unstable (enemy collision: script.js line 269 & 273)\
+*Note: This game has a bug in enemy collision if framerate is unstable (enemy collision: script.js line 269 & 273)
 
+You can play the game demo here: https://zx-diamond-collector.netlify.app/ \
 (Sorry for my bad english :D)
-
-Github: https://github.com/codenamezaxx
