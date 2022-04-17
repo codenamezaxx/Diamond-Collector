@@ -1,8 +1,10 @@
 @media screen and (min-device-width: 1290px){
+    html {
+        padding: 50px;
+    }
     body{
         font-family: "sans-serif",arial;
         display: flex;
-        background: rgb(175, 255, 101);
     }
     #canvas {
         width: 60%;
@@ -32,31 +34,28 @@
         size: 100%;
     }
     button{
-        margin: 5px 2px 5px 2px;
+        margin: 6px 8px 6px 8px;
         font-size: 80%;
         font-weight: 600;
-        width: 80px;
+        width: 85px;
     }
 }
 body{
     font-family: "sans-serif",arial;
     user-select: none;
     -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
     align-items: center;
     justify-items: center;
-    background: rgb(175, 255, 101);
+    background: rgb(0 77 71);
 }
 #canvas {
     border-radius: 10px;
     background: #222222;
-}
-h4 {
-    font-size: 14px;
-    text-align: left;
+    color: white;
 }
 span {
     align-items: flex-start;
@@ -72,6 +71,7 @@ button {
     letter-spacing: 2px;
     padding: 15px;
     border-radius: 20px;
-    
-    background-color: cyan;
+    border: none;
+    color: white;
+    background-color: #222222;
 }
