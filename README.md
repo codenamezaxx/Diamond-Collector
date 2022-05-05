@@ -18,5 +18,5 @@ ENTER = Start game or Pause game
 
 *Note: This game has a bug in enemy collision if framerate is unstable (enemy collision: script.js line 269 & 273)
 
-You can play the game demo here: https://diamond-collector-classic.netlify.app/ \
+[Play Demo](https://diamond-collector-classic.netlify.app/) \
 (Sorry for my bad english :D)
