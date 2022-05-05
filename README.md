@@ -1,6 +1,7 @@
 # Diamond Collector
-This repository just a simple game
-and this is my first game using HTML + CSS + JavaScript, this game can be played in desktop or mobile device
+This repository just a simple game \
+and this is my first game using HTML + CSS + JavaScript,\
+this game can be played in desktop or mobile device
 
 # Objective
 - Collect diamond as many as you can (just collect the diamond that spawned)
@@ -9,14 +10,13 @@ and this is my first game using HTML + CSS + JavaScript, this game can be played
 # Controls
 You can use button in the screen (maybe little difficult) or use keyboard:
 
-W / ArrowUp = Move Up
-A / ArrowLeft = Move Left
-S / ArrowDown = Move Down
-D / ArrowRight = Move Right
+W / ArrowUp = Move Up\
+A / ArrowLeft = Move Left\
+S / ArrowDown = Move Down\
+D / ArrowRight = Move Right\
 ENTER = Start game or Pause game
 
 *Note: This game has a bug in enemy collision if framerate is unstable (enemy collision: script.js line 269 & 273)
 
+[Play Demo](https://diamond-collector-classic.netlify.app/) \
 (Sorry for my bad english :D)
-
-Github: https://github.com/codenamezaxx
